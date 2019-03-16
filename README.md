@@ -15,6 +15,12 @@ cd bloomFilter
 sbt test
 ```
 
+Note that I use the Unix system wordlist at "/usr/share/dict/words". 
+
+This works on a number of posix platforms. If you have difficulty due to
+word list location, you can change that in the test source 
+[here](https://github.com/alexanderkyte/bloomFilter/blob/7822f0756eed6452695d52aef0331bac86d006b2/src/test/scala/BloomFilterTest.scala#L8)
+
 ##### Expected results:
 
 ```
